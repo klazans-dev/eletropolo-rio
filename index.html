@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eletropolo Rio | Materiais Elétricos e Iluminação</title>
-    
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path fill='%23f5a623' d='M11 18h4v12l10-16h-6l4-12L11 18z'/></svg>" type="image/svg+xml">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -156,93 +157,116 @@
                     <i class="fab fa-google text-yellow-400 text-lg"></i>
                     <span class="text-sm font-semibold text-gray-200">Avaliações Verificadas no Google</span>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
-                    O que dizem os nossos clientes
-                </h2>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">O que dizem os nossos clientes</h2>
                 <div class="flex justify-center items-center gap-3">
                     <span class="text-3xl font-black text-brand-yellow">4.8</span>
                     <div class="flex text-yellow-400 text-lg">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     </div>
                     <span class="text-gray-400 text-sm">(Mais de 120 avaliações no Rio de Janeiro)</span>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <div class="flex text-yellow-400 text-xs">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <div class="swiper avaliacoes-swiper" data-aos="fade-up" data-aos-delay="200" style="padding-bottom: 20px;">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide h-auto">
+                        <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between h-full" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex text-yellow-400 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                    <i class="fab fa-google text-gray-500 text-sm"></i>
+                                </div>
+                                <p class="text-gray-300 text-sm leading-relaxed mb-6">"Melhor loja de material elétrico da região! Atendimento impecável e encontraram todos os disjuntores e cabos específicos para a minha obra."</p>
                             </div>
-                            <i class="fab fa-google text-gray-500 text-sm"></i>
-                        </div>
-                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
-                            "Melhor loja de material elétrico da região! Atendimento impecável e encontraram todos os disjuntores e cabos específicos para a minha obra."
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
-                        <div class="w-10 h-10 rounded-full bg-brand-yellow text-deep-blue font-bold flex items-center justify-center text-sm">
-                            MC
-                        </div>
-                        <div>
-                            <h4 class="text-white font-bold text-sm">Marcos Costa</h4>
-                            <p class="text-gray-400 text-xs">Eletricista Predial</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <div class="flex text-yellow-400 text-xs">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                                <div class="w-10 h-10 rounded-full bg-brand-yellow text-deep-blue font-bold flex items-center justify-center text-sm">MC</div>
+                                <div><h4 class="text-white font-bold text-sm">Marcos Costa</h4><p class="text-gray-400 text-xs">Eletricista Predial</p></div>
                             </div>
-                            <i class="fab fa-google text-gray-500 text-sm"></i>
-                        </div>
-                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
-                            "Compro sempre para a minha empreiteira. Preço justo, entrega rápida e ótimo suporte no orçamento via WhatsApp."
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
-                        <div class="w-10 h-10 rounded-full bg-blue-500 text-white font-bold flex items-center justify-center text-sm">
-                            RS
-                        </div>
-                        <div>
-                            <h4 class="text-white font-bold text-sm">Rodrigo Silva</h4>
-                            <p class="text-gray-400 text-xs">Engenheiro Civil</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <div class="flex text-yellow-400 text-xs">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <div class="swiper-slide h-auto">
+                        <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between h-full" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex text-yellow-400 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                    <i class="fab fa-google text-gray-500 text-sm"></i>
+                                </div>
+                                <p class="text-gray-300 text-sm leading-relaxed mb-6">"Compro sempre para a minha empreiteira. Preço justo, entrega rápida e ótimo suporte no orçamento via WhatsApp."</p>
                             </div>
-                            <i class="fab fa-google text-gray-500 text-sm"></i>
-                        </div>
-                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
-                            "Atendimento nota 10 na loja física. Projeto de iluminação LED para a minha loja ficou espetacular!"
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
-                        <div class="w-10 h-10 rounded-full bg-green-500 text-white font-bold flex items-center justify-center text-sm">
-                            AL
-                        </div>
-                        <div>
-                            <h4 class="text-white font-bold text-sm">Ana Lucia</h4>
-                            <p class="text-gray-400 text-xs">Comerciante local</p>
+                            <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                                <div class="w-10 h-10 rounded-full bg-blue-500 text-white font-bold flex items-center justify-center text-sm">RS</div>
+                                <div><h4 class="text-white font-bold text-sm">Rodrigo Silva</h4><p class="text-gray-400 text-xs">Engenheiro Civil</p></div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                    <div class="swiper-slide h-auto">
+                        <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between h-full" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex text-yellow-400 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                    <i class="fab fa-google text-gray-500 text-sm"></i>
+                                </div>
+                                <p class="text-gray-300 text-sm leading-relaxed mb-6">"Atendimento nota 10 na loja física. Projeto de iluminação LED para a minha loja ficou espetacular!"</p>
+                            </div>
+                            <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                                <div class="w-10 h-10 rounded-full bg-green-500 text-white font-bold flex items-center justify-center text-sm">AL</div>
+                                <div><h4 class="text-white font-bold text-sm">Ana Lucia</h4><p class="text-gray-400 text-xs">Comerciante local</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide h-auto">
+                        <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between h-full" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex text-yellow-400 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                    <i class="fab fa-google text-gray-500 text-sm"></i>
+                                </div>
+                                <p class="text-gray-300 text-sm leading-relaxed mb-6">"Excelente parceiro para nosso condomínio. Preços imbatíveis em lâmpadas tubulares LED e contatores para as bombas."</p>
+                            </div>
+                            <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                                <div class="w-10 h-10 rounded-full bg-purple-500 text-white font-bold flex items-center justify-center text-sm">TM</div>
+                                <div><h4 class="text-white font-bold text-sm">Tiago Moura</h4><p class="text-gray-400 text-xs">Síndico</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide h-auto">
+                        <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between h-full" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex text-yellow-400 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                    <i class="fab fa-google text-gray-500 text-sm"></i>
+                                </div>
+                                <p class="text-gray-300 text-sm leading-relaxed mb-6">"A equipe técnica do WhatsApp resolve as minhas listas de material em minutos. Logística perfeita e sem atrasos."</p>
+                            </div>
+                            <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                                <div class="w-10 h-10 rounded-full bg-red-500 text-white font-bold flex items-center justify-center text-sm">CE</div>
+                                <div><h4 class="text-white font-bold text-sm">Carlos Eduardo</h4><p class="text-gray-400 text-xs">Empreiteiro</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide h-auto">
+                        <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between h-full" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                            <div>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex text-yellow-400 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                    <i class="fab fa-google text-gray-500 text-sm"></i>
+                                </div>
+                                <p class="text-gray-300 text-sm leading-relaxed mb-6">"Variedade incrível de plafons e painéis de LED para os meus projetos de interiores. Os clientes adoram o resultado."</p>
+                            </div>
+                            <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                                <div class="w-10 h-10 rounded-full bg-pink-500 text-white font-bold flex items-center justify-center text-sm">FL</div>
+                                <div><h4 class="text-white font-bold text-sm">Fernanda Lima</h4><p class="text-gray-400 text-xs">Arquiteta</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -371,6 +395,26 @@
             for(let i = 0; i < 8; i++) createElectricParticle(e.clientX, e.clientY);
         });
     });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.avaliacoes-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                grabCursor: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    768: { slidesPerView: 2, spaceBetween: 20 },
+                    1024: { slidesPerView: 3, spaceBetween: 30 }
+                }
+            });
+        });
     </script>
 </body>
 </html>
