@@ -1,0 +1,576 @@
+/* Paleta de Cores Baseada nas Imagens */
+:root {
+    --bg-deep-blue: #111a2c; /* Azul marinho escuro do fundo */
+    --brand-yellow: #f5a623; /* Amarelo da faixa */
+    --brand-yellow-glow: rgba(245, 166, 35, 0.4);
+    --whatsapp-green: #25D366;
+    --text-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg-deep-blue);
+    color: var(--text-white);
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Faixa Amarela Fluida (Substitui o bloco rígido) */
+.bg-diagonal-fluid {
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    width: 60%;
+    height: 120vh;
+    background: linear-gradient(135deg, rgba(245, 166, 35, 0.9) 0%, rgba(245, 166, 35, 0.1) 100%);
+    transform: rotate(15deg);
+    filter: blur(8px);
+    z-index: -1;
+    border-radius: 40px;
+}
+
+/* Glassmorphism Classes Gerais */
+.glass-nav {
+    background: rgba(17, 26, 44, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabeçalho e Logo Estilo "Eletropolo" */
+.header {
+    padding: 15px 0;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--text-white);
+    color: var(--bg-deep-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.logo-text-solid {
+    font-weight: 900;
+    color: var(--text-white);
+}
+
+.logo-text-outline {
+    font-weight: 300;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-white);
+}
+
+.nav-desktop a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-desktop a:hover {
+    color: var(--brand-yellow);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.text-yellow {
+    color: var(--brand-yellow);
+}
+
+.hero-text p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.hero-text p strong {
+    color: var(--text-white);
+}
+
+/* Botões */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-green {
+    background-color: var(--whatsapp-green);
+    color: #fff;
+}
+
+.btn-green.shadow-glow:hover {
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-glass {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--brand-yellow);
+    border: 1px solid var(--brand-yellow);
+    backdrop-filter: blur(5px);
+}
+
+.btn-glass:hover {
+    background: var(--brand-yellow);
+    color: var(--bg-deep-blue);
+}
+
+/* Composição Circular (Lado Direito) */
+.hero-composition {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.circle-image {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid var(--brand-yellow);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle-large {
+    width: 320px;
+    height: 320px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.circle-small {
+    width: 220px;
+    height: 220px;
+    bottom: 20px;
+    left: 180px;
+    z-index: 3;
+    border-color: var(--text-white); /* Contraste na borda */
+}
+
+/* Fios saltando em 3D */
+.popping-wires {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    bottom: -30px;
+    right: 20px;
+    z-index: 4;
+    filter: drop-shadow(0 15px 15px rgba(0,0,0,0.6));
+}
+
+/* Animação Fluida de Energia (Substitui a anterior) */
+@keyframes fluidEnergy {
+    0% { stroke-dashoffset: 2500; opacity: 0.1; }
+    30% { opacity: 0.8; }
+    70% { opacity: 0.8; }
+    100% { stroke-dashoffset: 0; opacity: 0.1; }
+}
+
+.animate-fluid-1 {
+    animation: fluidEnergy 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-fluid-2 {
+    animation: fluidEnergy 15s cubic-bezier(0.4, 0, 0.2, 1) infinite reverse;
+    animation-delay: -5s; /* Faz a segunda linha começar em um tempo diferente */
+}
+/* Catálogo */
+.catalog-section {
+    padding: 80px 0;
+    background: #ffffff; /* Fundo branco para destacar o catálogo */
+    color: var(--bg-deep-blue);
+}
+
+.section-title h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.title-line {
+    width: 80px;
+    height: 4px;
+    background-color: var(--brand-yellow);
+    margin: 15px auto 40px;
+    border-radius: 2px;
+}
+
+.iframe-container {
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+    .hero-text {
+        text-align: center;
+        padding: 30px;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .hero-composition {
+        margin: 40px auto;
+        max-width: 400px;
+    }
+    .bg-diagonal-fluid {
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+}
+/* Seção de Marcas (Brands) */
+.brands-section {
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: -40px; /* Para conectar suavemente com o fundo branco do catálogo */
+    position: relative;
+    z-index: 50;
+}
+
+.brands-title {
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.brands-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.brands-track span {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--text-white);
+    letter-spacing: 1px;
+    opacity: 0.4;
+    transition: all 0.4s ease;
+    cursor: default;
+}
+
+/* Efeito de acender ao passar o mouse */
+.brands-track span:hover {
+    opacity: 1;
+    color: var(--brand-yellow);
+    transform: translateY(-3px) scale(1.05);
+    text-shadow: 0 5px 15px var(--brand-yellow-glow);
+}
+
+/* Responsividade das marcas */
+@media (max-width: 768px) {
+    .brands-track {
+        justify-content: center;
+        gap: 20px;
+    }
+    .brands-track span {
+        font-size: 1.2rem;
+    }
+}/* Animação do Carrossel de Marcas (Marquee) */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0 30px;
+}
+
+.marquee-track {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+}
+
+.marquee-track span {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--text-white);
+    opacity: 0.3;
+    margin: 0 40px; /* Espaço entre as marcas */
+    transition: opacity 0.3s;
+}
+
+.marquee-track span:hover {
+    opacity: 1;
+    color: var(--brand-yellow);
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Move metade, pois o conteúdo é duplicado */
+}
+
+/* Seção de Contato e Formulário */
+.grid-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.input-glass {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--text-white);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.input-glass::placeholder {
+    color: #94a3b8;
+}
+
+.input-glass:focus {
+    border-color: var(--brand-yellow);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.input-glass option {
+    background: var(--bg-deep-blue);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .grid-contact {
+        grid-template-columns: 1fr;
+    }
+}
+/* Seção Nossa Loja / Galeria de Mídia (Melhor Preço) */
+.store-section {
+    background-color: var(--bg-deep-blue);
+    padding: 80px 0 40px;
+}
+
+.media-gallery {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.media-video, .media-img {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 8px; /* Espaço para o efeito glass */
+}
+
+.media-video video, .media-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.6s ease;
+}
+
+/* Efeito de zoom suave ao passar o mouse */
+.media-img img:hover, .media-video video:hover {
+    transform: scale(1.05);
+}
+
+.media-video {
+    min-height: 400px;
+}
+
+.media-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.media-img {
+    height: calc(50% - 15px);
+    min-height: 200px;
+}
+
+.media-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: var(--brand-yellow);
+    color: var(--bg-deep-blue);
+    padding: 10px 20px;
+    font-weight: 900;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 900px) {
+    .media-gallery {
+        grid-template-columns: 1fr;
+    }
+    .media-video {
+        min-height: 350px;
+    }
+    .media-images {
+        flex-direction: row; /* Coloca as imagens lado a lado no celular se couber, ou empilha */
+    }
+}
+@media (max-width: 600px) {
+    .media-images {
+        flex-direction: column;
+    }
+}
+/* Animação Contínua dos Circuitos no Fundo */
+@keyframes strokeFlow {
+    0% { stroke-dashoffset: 1100; }
+    100% { stroke-dashoffset: 0; }
+}
+.animate-pulse-circuit {
+    animation: strokeFlow 8s linear infinite;
+}
+
+/* Estilos para o Efeito de Partículas no Clique (CSS do Impacto) */
+.electric-click-particle {
+    position: fixed;
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(255,204,0,1) 0%, rgba(255,255,255,0) 80%);
+    box-shadow: 0 0 10px #FFCC00;
+    border-radius: 50%;
+    transform: scale(0);
+    z-index: 2000;
+}
+
+@keyframes particle-impact {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 0.8; }
+    100% { transform: translate(-50%, -50%) scale(3); opacity: 0; }
+}
+/* Botão Flutuante do WhatsApp com Efeito de Pulso */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 32px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+    z-index: 1000;
+    animation: pulse-whatsapp 2s infinite;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: #FFF;
+}
+
+@keyframes pulse-whatsapp {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}

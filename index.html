@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletropolo Rio | Materiais Elétricos e Iluminação</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path fill='%23f5a623' d='M11 18h4v12l10-16h-6l4-12L11 18z'/></svg>" type="image/svg+xml">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { 'deep-blue': '#111a2c', 'brand-yellow': '#f5a623', } }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-deep-blue text-white overflow-x-hidden">
+
+    <div class="bg-diagonal-fluid"></div>
+
+    <header class="header glass-nav relative z-50">
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+                <span class="logo-text-solid">ELETRO</span><span class="logo-text-outline">POLO</span>
+            </div>
+            <nav class="nav-desktop">
+                <a href="#inicio">Início</a>
+                <a href="#catalogo">Catálogo Digital</a>
+                <a href="#orcamento">Orçamento</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero relative bg-deep-blue text-white overflow-hidden py-24 min-h-[600px] flex items-center">
+        <div class="absolute inset-0 opacity-30 pointer-events-none z-0">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <defs>
+                    <filter id="glow-circuit" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="6" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+                </defs>
+                <path d="M-100,200 C300,350 500,50 900,200 S1400,350 1600,250" fill="none" stroke="#2a4365" stroke-width="1.5"/>
+                <path d="M-100,200 C300,350 500,50 900,200 S1400,350 1600,250" fill="none" stroke="#f5a623" stroke-width="3" filter="url(#glow-circuit)" stroke-dasharray="300 2000" class="animate-fluid-1"/>
+                <path d="M-100,600 C400,450 700,750 1100,500 S1500,650 1700,550" fill="none" stroke="#2a4365" stroke-width="1.5"/>
+                <path d="M-100,600 C400,450 700,750 1100,500 S1500,650 1700,550" fill="none" stroke="#00d2ff" stroke-width="3" filter="url(#glow-circuit)" stroke-dasharray="250 2200" class="animate-fluid-2"/>
+            </svg>
+        </div>
+
+        <div class="container relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="text-left glass-card p-10 rounded-2xl" data-aos="fade-right" data-aos-duration="1200" style="background: rgba(255,255,255,0.02); backdrop-filter: blur(8px);">
+                <div class="flex items-center gap-2 text-brand-yellow text-xs font-bold uppercase tracking-widest mb-6">
+                    <span class="flex h-2.5 w-2.5 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-yellow opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-yellow"></span>
+                    </span>
+                    Energia de Alta Performance no RJ
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 text-white leading-tight">
+                    MATERIAIS ELÉTRICOS <br>
+                    <span class="relative inline-block">
+                        E ILUMINAÇÃO
+                        <span class="absolute bottom-0 left-0 w-full h-[4px] bg-brand-yellow shadow-[0_0_15px_#f5a623]"></span>
+                    </span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8">
+                    Somos uma loja especializada em materiais elétricos e iluminação em LED para <strong class="text-white">empresas e profissionais</strong> da área.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-6">
+                    <a href="https://wa.me/5521979995099" target="_blank" class="btn btn-green shadow-[0_4px_25px_rgba(37,211,102,0.35)] transform hover:-translate-y-1">
+                        <i class="fab fa-whatsapp text-xl"></i> Enviar mensagem
+                    </a>
+                    <a href="#catalogo" class="btn btn-outline border-brand-yellow text-brand-yellow shadow-[0_4px_20px_rgba(245,166,35,0.15)] transform hover:-translate-y-1" style="border: 1px solid #f5a623;">
+                        Solicite seu orçamento
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-3 pt-4 border-t border-white/10" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex text-yellow-400 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-gray-300 text-sm font-medium">Avaliado com <strong class="text-white">4.8/5</strong> no Google</span>
+                </div>
+            </div>
+
+            <div class="hero-composition" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="circle-image circle-large float-slow">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop" alt="Materiais base">
+                </div>
+                <div class="circle-image circle-small float-fast">
+                    <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=2070&auto=format&fit=crop" alt="Disjuntores">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="brands-section glass-nav overflow-hidden">
+        <div class="container">
+            <p class="brands-title">TRABALHAMOS COM AS MELHORES MARCAS</p>
+        </div>
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <span>WEG</span><span>3M</span><span>STECK</span><span>AVANT</span>
+                <span>MBLED</span><span>COBRECOM</span><span>NAMBEI</span><span>ILUMI</span>
+                <span>WEG</span><span>3M</span><span>STECK</span><span>AVANT</span>
+                <span>MBLED</span><span>COBRECOM</span><span>NAMBEI</span><span>ILUMI</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-loja" class="store-section relative py-20" style="overflow: hidden;">
+        <div class="container">
+            <div class="section-title text-center mb-12" data-aos="fade-up">
+                <h2 style="color: var(--text-white); font-size: 2.5rem; font-weight: 900;">A Maior Estrutura para o Seu Projeto</h2>
+                <div class="title-line"></div>
+                <p style="color: #94a3b8; font-size: 1.1rem;">Garantimos o melhor atendimento, amplo estoque e <strong style="color: var(--brand-yellow);">o melhor preço do Rio de Janeiro</strong>.</p>
+            </div>
+
+            <div class="media-gallery">
+                <div class="media-video glass-card" data-aos="fade-right" data-aos-duration="1000">
+                    <video autoplay loop muted playsinline>
+                        <source src="./Melhorpreco.mp4" type="video/mp4">
+                    </video>
+                    <div class="media-caption">O Melhor Preço do RJ <i class="fas fa-tag"></i></div>
+                </div>
+
+                <div class="media-images">
+                    <div class="media-img glass-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                        <img src="./melhorpreco.jpg" alt="Equipe Eletropolo">
+                    </div>
+                    <div class="media-img glass-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                        <img src="./fachada_limpa.jpg" alt="Fachada Limpa Eletropolo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="avaliacoes" class="py-20 relative overflow-hidden" style="background: rgba(17, 26, 44, 0.95);">
+        <div class="container relative z-10">
+            
+            <div class="text-center mb-14" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-4">
+                    <i class="fab fa-google text-yellow-400 text-lg"></i>
+                    <span class="text-sm font-semibold text-gray-200">Avaliações Verificadas no Google</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
+                    O que dizem os nossos clientes
+                </h2>
+                <div class="flex justify-center items-center gap-3">
+                    <span class="text-3xl font-black text-brand-yellow">4.8</span>
+                    <div class="flex text-yellow-400 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-gray-400 text-sm">(Mais de 120 avaliações no Rio de Janeiro)</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <i class="fab fa-google text-gray-500 text-sm"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            "Melhor loja de material elétrico da região! Atendimento impecável e encontraram todos os disjuntores e cabos específicos para a minha obra."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                        <div class="w-10 h-10 rounded-full bg-brand-yellow text-deep-blue font-bold flex items-center justify-center text-sm">
+                            MC
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Marcos Costa</h4>
+                            <p class="text-gray-400 text-xs">Eletricista Predial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <i class="fab fa-google text-gray-500 text-sm"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            "Compro sempre para a minha empreiteira. Preço justo, entrega rápida e ótimo suporte no orçamento via WhatsApp."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                        <div class="w-10 h-10 rounded-full bg-blue-500 text-white font-bold flex items-center justify-center text-sm">
+                            RS
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Rodrigo Silva</h4>
+                            <p class="text-gray-400 text-xs">Engenheiro Civil</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <i class="fab fa-google text-gray-500 text-sm"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            "Atendimento nota 10 na loja física. Projeto de iluminação LED para a minha loja ficou espetacular!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                        <div class="w-10 h-10 rounded-full bg-green-500 text-white font-bold flex items-center justify-center text-sm">
+                            AL
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Ana Lucia</h4>
+                            <p class="text-gray-400 text-xs">Comerciante local</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="catalogo" class="catalog-section" style="background: white;">
+        <div class="container" data-aos="fade-up" data-aos-duration="1200">
+            <div class="section-title text-center mb-10">
+                <h2 style="font-size: 2.5rem; color: #111a2c; font-weight: 900;">Catálogo de Produtos</h2>
+                <div class="title-line" style="width: 80px; height: 4px; background-color: #f5a623; margin: 15px auto;"></div>
+                <p style="color: #666;">Navegue pelo nosso catálogo digital completo.</p>
+            </div>
+
+            <div class="iframe-container shadow-2xl rounded-2xl overflow-hidden" style="height: 800px; border: 1px solid #e5e7eb;">
+                <iframe src="https://catalogo.arpasistemas.com.br/33209512000111/listar" title="Catálogo Digital" loading="lazy" class="w-full h-full border-0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="orcamento" class="contact-section relative py-20" style="overflow: hidden;">
+        <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('./fachada-limpa.jpg');"></div>
+        <div class="absolute inset-0 z-0" style="background-color: #111a2c; opacity: 0.85;"></div>
+        
+        <div class="container relative z-10 grid-contact grid md:grid-cols-2 gap-12">
+            
+            <div class="glass-card form-container" data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="text-3xl font-bold mb-6" style="color: #f5a623;">PEÇA SEU ORÇAMENTO</h2>
+                <form id="formOrcamento" class="flex flex-col gap-4">
+                    <input type="hidden" name="access_key" value="SUA_CHAVE_WEB3FORMS_AQUI">
+                    <input type="hidden" name="subject" value="Novo Orçamento Recebido!">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <input type="text" id="nome" name="nome" placeholder="Nome" class="input-glass p-3 rounded bg-white/10 border border-white/20 text-white" required>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="Tel/WhatsApp" class="input-glass p-3 rounded bg-white/10 border border-white/20 text-white" required>
+                    <input type="email" id="email" name="email" placeholder="E-mail" class="input-glass p-3 rounded bg-white/10 border border-white/20 text-white">
+                    
+                    <select id="tipoCliente" name="tipo_cliente" class="input-glass p-3 rounded bg-white/10 border border-white/20 text-white" required>
+                        <option value="" disabled selected class="text-black">Tipo de Cliente</option>
+                        <option value="Pessoa Física" class="text-black">Pessoa Física</option>
+                        <option value="Pessoa Jurídica" class="text-black">Pessoa Jurídica</option>
+                        <option value="Profissional" class="text-black">Profissional da Área</option>
+                    </select>
+                    
+                    <textarea id="mensagem" name="mensagem" placeholder="O que você precisa?" rows="4" class="input-glass p-3 rounded bg-white/10 border border-white/20 text-white" required></textarea>
+                    
+                    <button type="submit" class="btn btn-green w-full justify-center mt-2 p-4 font-bold rounded bg-green-500 text-white hover:bg-green-600 transition">
+                        <i class="fas fa-paper-plane"></i> ENVIAR ORÇAMENTO
+                    </button>
+                </form>
+            </div>
+
+            <div class="glass-card map-container flex flex-col gap-6" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-2xl font-bold text-white">Contato e Localização</h2>
+                <div class="contact-info flex flex-col gap-3 text-gray-300">
+                    <p><i class="fas fa-phone text-yellow-400"></i> (21) 3774-6541</p>
+                    <p><i class="fab fa-whatsapp text-green-400"></i> (21) 97999-5099</p>
+                    <p><i class="fas fa-envelope text-yellow-400"></i> eletropolorio@gmail.com</p>
+                </div>
+                <div class="w-full h-64 rounded-xl overflow-hidden border border-gray-700">
+                    <iframe src="https://maps.google.com/maps?width=100%25&height=100%25&hl=pt-BR&q=Eletropolo%20-%20Materiais%20El%C3%A9tricos%20e%20Ilumina%C3%A7%C3%A3o,%20Av.%20Rep%C3%BAblica%20do%20Paraguai%20-%20Vila%20Sarapui,%20Duque%20de%20Caxias%20-%20RJ,%2025050-100,%20Brasil&t=&z=16&ie=UTF8&iwloc=B&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer" style="background-color: #111a2c; padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+        <div class="container footer-bottom" style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+            <p style="color: #94a3b8; font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                © 2026 Eletropolo Rio. Todos os direitos reservados. CNPJ: 33.209.512/0001-11
+            </p>
+            <p style="color: #64748b; font-size: 0.8rem; letter-spacing: 0.5px; margin: 0; line-height: 1.5;">
+                Desenvolvido por 
+                <a href="https://wa.me/5522981063696?text=Ol%C3%A1%2C%20quero%20um%20site%20tamb%C3%A9m" target="_blank" style="color: #cbd5e1; font-weight: 600; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#f5a623'" onmouseout="this.style.color='#cbd5e1'">
+                    Callinfo Tecnologia e Desenvolvimento de Softwares
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5521979995099?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 100 });
+    </script>
+
+    <script>
+    document.getElementById('formOrcamento').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nome = document.getElementById('nome').value;
+        const whatsapp = document.getElementById('whatsapp').value;
+        const email = document.getElementById('email').value || 'Não informado';
+        const tipoCliente = document.getElementById('tipoCliente').value;
+        const mensagem = document.getElementById('mensagem').value;
+
+        const textoWhatsapp = encodeURIComponent(`⚡ *NOVO ORÇAMENTO - ELETROPOLO RIO* ⚡\n\n👤 *Nome:* ${nome}\n📱 *WhatsApp:* ${whatsapp}\n📧 *E-mail:* ${email}\n💼 *Perfil:* ${tipoCliente}\n\n📝 *Pedido:* \n${mensagem}`);
+        const urlWhatsapp = `https://wa.me/5521979995099?text=${textoWhatsapp}`;
+
+        const btn = this.querySelector('button');
+        const textoOriginal = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+        btn.disabled = true;
+
+        fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(this) })
+        .then(() => { window.open(urlWhatsapp, '_blank'); document.getElementById('formOrcamento').reset(); })
+        .catch(() => { window.open(urlWhatsapp, '_blank'); })
+        .finally(() => { btn.innerHTML = textoOriginal; btn.disabled = false; });
+    });
+
+    function createElectricParticle(x, y) {
+        const particle = document.createElement('div');
+        particle.className = 'electric-click-particle';
+        const size = Math.random() * 15 + 5;
+        particle.style.width = size + 'px';
+        particle.style.height = size + 'px';
+        particle.style.left = x + 'px';
+        particle.style.top = y + 'px';
+        particle.style.animation = 'particle-impact 0.4s ease-out forwards';
+        document.body.appendChild(particle);
+        setTimeout(() => particle.remove(), 400);
+    }
+
+    document.querySelectorAll('a, button, .input-glass').forEach(element => {
+        element.addEventListener('click', function(e) {
+            for(let i = 0; i < 8; i++) createElectricParticle(e.clientX, e.clientY);
+        });
+    });
+    </script>
+</body>
+</html>
